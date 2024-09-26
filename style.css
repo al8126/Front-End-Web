@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    position:relative;
+    height: 2rem;
+    bottom-border: 1rem solid;
+  }
+  
+  .Craigslist-logo{
+    margin-right: 0.5rem;
+    height: 30px;
+  }
+  
+  .Craigslist{
+    font-size: 30px;
+    background-color: transparent;
+  }
+  
+  .header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #413C58;
+    color: white;
+  }
+  
+  .left-menu, .right-menu {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-bar-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center; /* Centers the search bar horizontally */
+  }
+  
+  .search-bar {
+    width: 100%;
+    max-width: 400px; /* Limits the maximum width of the search bar */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .right-menu a {
+    margin-left: 20px;
+    text-decoration: underline;
+    color: white;
+  }
+  
+  .Ad{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:20px;
+    padding: 0.4rem;
+  }
+  
+  .ad-logo {
+    height: 50px;
+  }
+  
+  .Ad > a{
+    text-decoration: underline;
+  }
+  
+  .top_row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+  }
+  
+  .top_row > button{
+    margin-right: 1rem;
+    margin-left: 1rem;
+    width: 200px;
+    height: 150px;
+    border-radius: 20px;
+    border-style: hidden;
+    background-color: #E5E4E2;
+  }
+  
+  .top_row > button:hover{
+    background-color: #413C58;
+    color: white;
+  }
+  
+  .bottom_row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .bottom_row > button{
+    margin-right: 1rem;
+    margin-left: 1rem;
+    width: 200px;
+    height: 150px;
+    border-radius: 20px;
+    border-style: hidden;
+    background-color: #E5E4E2;
+  }
+  
+  .bottom_row > button:hover{
+    background-color: #413C58;
+    color: white;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures body takes up at least 100% of the viewport height */
+  }
+  
+  header, main, footer {
+    padding: 20px;
+  }
+  
+  /* Flex container for main layout */
+  main {
+    flex-grow: 1; /* This allows the main content to expand and push the footer down */
+  }
+  
+  footer {
+    background-color: #413C58;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  footer section a {
+    margin: 10px;
+    text-decoration: underline;
+    color: white;
+  }
+  
