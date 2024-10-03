@@ -139,4 +139,39 @@
     text-decoration: underline;
     color: white;
   }
+
+@media (max-width: 480px) {
+  .Craigslist-logo {
+    height: 25px;
+  }
+
+  .Craigslist {
+    font-size: 24px;
+  }
+
+  .search-bar {
+    padding: 6px;
+  }
   
+  .top_row,
+  .bottom_row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .top_row > button, 
+  .bottom_row > button {
+    height: 80px;
+    font-size: 14px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .ad-logo {
+    height: 40px;
+  }
+
+  footer section a {
+    font-size: 14px;
+  }
+}
