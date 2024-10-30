@@ -1,2 +1,37 @@
 <!DOCTYPE html>
-<html lang
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div>
+        <p>This is paragraph 1.</p>
+        <p>This is paragraph 2.</p>
+        <p>This is paragraph 3.</p>
+        <p>This is paragraph 4.</p>
+        <p>This is paragraph 5.</p>
+    </div>
+    <div id="section1">
+        <p>This is paragraph 6 in section 1.</p>
+        <p>This is paragraph 7 in section 1.</p>
+    </div>
+
+    <div id="section2">
+        <p>This is paragraph 8 in section 2.</p>
+        <p>This is paragraph 9 in section 2.</p>
+    </div>
+
+    <div>
+        <p>This is paragraph 10.</p>
+    </div>
+    <button onclick="countParagraphs()">Count Paragraphs</button>
+    <button onclick="countSection1Elements()">Count Elements in Section 1</button>
+    <button onclick="countSection2Elements()">Count Elements in Section 2</button>
+    <div id="output1"></div>
+    <div id="output2"></div>
+    <div id="output3"></div>
+</body>
+</html>

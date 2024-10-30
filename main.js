@@ -1,34 +1,15 @@
-let myNum = 10;
-let myName = 'Ann';
-
-pageHeading.innerHTML = 'Hello: ' + myName;
-
-
-function squares(val) {
-
-    displayText.innerHTML = '';
-    for (let i = 1; i <=val; i++) {
-
-        displayText.innerHTML += `
-        <p>
-            The square of ${i} is: ${i * i}.
-        </p>`;
-    }
-};
-
-goButton.onclick = function(){
-    squares(maxNumInput.value);
-};
-
-maxNumInput.oninput = function(){
-    squares(maxNumInput.value);
+function countParagraphs() {
+    const paragraphs = document.getElementsByTagName('p');
+    document.getElementById('output1').innerText = `There are ${paragraphs.length} paragraph tags on this page.`;
 }
 
-clearButton.onclick = function (){
-    displayText.innerHTML = '';
-    maxNumInput.value = '';
-};
+function countSection1Elements() {
+    const section1Elements = document.getElementById('section1').children;
+    document.getElementById('output2').innerText = `There are ${section1Elements.length} elements inside section 1.`;
+}
 
-bgColorInput.onchange = function(){
-    document.body.style.backgroundColor = bgColorInput.value;
+// Count and display the number of elements inside the second ID (section2)
+function countSection2Elements() {
+    const section2Elements = document.getElementById('section2').children;
+    document.getElementById('output3').innerText = `There are ${section2Elements.length} elements inside section 2.`;
 }
