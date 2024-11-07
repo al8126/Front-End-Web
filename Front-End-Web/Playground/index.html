@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Music Player</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="player">
+    <h2>Simple Music Player</h2>
+    
+    <!-- Album Cover or Player Image -->
+    <img id="albumCover" src="vinyl.png" alt="Album Cover">
+    
+    <audio id="audioPlayer" src="audio.mp3"></audio>
+
+    <div class="button-container">
+        <button id="playPauseBtn" class="button">Play</button>
+    </div>
+    
+    
+    <!-- Seek Slider -->
+    <input id="seekSlider" class="slider" type="range" min="0" max="100" value="0">
+    
+    <!-- Volume Control -->
+    <label for="volumeSlider">Volume:</label>
+    <input id="volumeSlider" class="slider" type="range" min="0" max="1" step="0.1" value="1">
+    
+    <!-- Current Time Display -->
+    <p class="time" id="currentTime">0:00 / 0:00</p>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>

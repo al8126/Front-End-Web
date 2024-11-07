@@ -1,0 +1,126 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+This is Ann's code
+*/
+
+body {
+    font-family: verdana;
+    background-color: #ddd;
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 2em;
+    margin-top: 1em;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+menu{
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+menu>button{
+    margin: 0.5em;
+    padding: 0.5em 1em;
+}
+
+#mainDeck {
+    width: 28em;
+    background-color: tan;
+    margin: 1em;
+    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    transition: 0.2s;
+    cursor: pointer;
+    background-color: white;
+    margin: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3em;
+    height: 4em;
+    /*Thismakestextbehavelikenowrappingtextbox*/border-radius: 0.3em ;
+    -webkit-border-radius:0.3em;
+    -moz-border-radius:0.3em;
+    -ms-border-radius:0.3em;
+    -o-border-radius:0.3em;
+    box-shadow: 1px 1px 2px black;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+
+.flipped{
+    background-color: slategray;
+    color: slategray !important;
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}

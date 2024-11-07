@@ -1,0 +1,81 @@
+/* Main Background */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #F5F5DC; /* Beige */
+  margin: 0;
+}
+
+/* Music Player Container */
+.player {
+  background-color: #ffffff; /* White for main player background */
+  border: 2px solid #A7C482; /* Olivine border */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+/* Title Styling */
+h2 {
+  color: #585123; /* Field Drab */
+}
+
+/* Album Cover Image */
+#albumCover {
+  width: 100%;
+  max-width: 200px;
+  margin: 15px auto;
+}
+
+/* Play Button Container */
+.button-container {
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Play/Pause Button */
+.button {
+  background-color: #A7C482; /* Olivine for button */
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #585123; /* Field Drab for hover effect */
+}
+
+.button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Seek Slider */
+.slider {
+  width: 100%;
+  margin-top: 10px;
+  appearance: none;
+  height: 5px;
+  background-color: #EFD2CB; /* Pale Dogwood */
+  border-radius: 5px;
+}
+
+/* Volume Slider */
+#volumeSlider {
+  background-color: #A7C482; /* Olivine */
+}
+
+/* Current Time Display */
+.time {
+  font-size: 0.9em;
+  color: #585123; /* Field Drab */
+}
+
